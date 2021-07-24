@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Phần mềm quản lý nhà hàng</title>
+
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/layout/header.css">
+    <link rel="stylesheet" href="../css/layout/menu.css">
+    <link rel="stylesheet" href="../css/layout/content.css">
+    <link rel="stylesheet" href="../content/font/fontawesome-5.15.1/css/all.min.css">
+    <script src="/js/lib/jquery-3.6.0.min.js"></script>
+    <script src="/js/lib/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="header-left">
+            <div class="toggle"></div>
+            <div class="logo"></div>
+        </div>
+        <div class="header-right">
+            <div class="restaurant">
+                <div class="name">Nhà hàng Biển Đông</div>
+                <div class="arrow">
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+            <div class="account">
+                <div class="icon">
+                    <i class="far fa-bell"></i>
+                </div>
+                <div class="avatar"></div>
+                <div class="text">Nguyễn Văn Mạnh</div>
+                <div class="dots">
+                    <i class="fas fa-ellipsis-h"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="menu">
+        <div class="menu-item">
+            <div class="menu-icon menu-icon-dasboard"></div>
+            <div class="menu-item-text">Tổng Quan</div>
+        </div>
+        <div class="menu-item">
+            <div class="menu-icon menu-icon-report"></div>
+            <div class="menu-item-text">Báo cáo</div>
+        </div>
+        <div class="menu-item">
+            <div class="menu-icon menu-icon-dasboard"></div>
+            <div class="menu-item-text">Mua hàng</div>
+        </div>
+        <div class="menu-item">
+            <div class="menu-icon menu-icon-employee"></div>
+            <div class="menu-item-text">Danh mục nhân viên</div>
+        </div>
+        <div class="menu-item">
+            <div class="menu-icon menu-icon-employee"></div>
+            <div class="menu-item-text">Danh mục nhân viên</div>
+        </div>
+        <div class="menu-item">
+            <div class="menu-icon menu-icon-setting"></div>
+            <div class="menu-item-text">Thiết lập hệ thống</div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="conteiner">
+            <div class="content-header">
+                <div class="title">
+                    <div class="text">Danh sách nhân viên</div>
+                    <div class="textbox"></div>
+                </div>
+                <div class="feature">
+                    <button class="button-icon">
+                        <div class="icon-add"></div>
+                        <div class="button-text">Thêm mới nhân viên</div>
+                    </button>
+                </div>
+            </div>
+            <div class="filter-bar">
+                <div class="filter-left">
+                    <input class="icon-search input input-search" type="text" style="display: flex;" placeholder="Tìm kiếm theo tên, số hồ sơ"></input>
+                    <div class="input input-text">
+                        <div class="text" style="padding-top: 14px; ">Tất cả phòng ban</div>
+                        <div class="input-icon">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="input input-text">
+                        <div class="text" style="padding-top: 14px;">Tất cả vị trí</div>
+                        <div class="input-icon">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter-right">
+                    <button class="second-button button-refresh"></button>
+                </div>
+            </div>
+            <div class="content-body">
+                <div class="container">
+                    <div class="grid grid-employee">
+                        <table class="table table-zebra table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Mã nhân viên</th>
+                                    <th>Họ và tên</th>
+                                    <th>Giới tính</th>
+                                    <th class="text-align-center">Ngày sinh</th>
+                                    <th>Điện thoại</th>
+                                    <th>Email</th>
+                                    <th>Chức vụ</th>
+                                    <th>Phòng ban</th>
+                                    <th class="text-align-right">Mức lương cơ bản</th>
+                                    <th>Tình trạng công việc</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>NV-123654</td>
+                                    <td>Hồ Văn Long</td>
+                                    <td>Nam</td>
+                                    <td class="text-align-center">11/08/1999</td>
+                                    <td>0967228399</td>
+                                    <td>vanlong@gmail.com</td>
+                                    <td>Giám đốc</td>
+                                    <td>Phòng nhân sự</td>
+                                    <td class="text-align-right">20.000.000</td>
+                                    <td>Đang thử việc</td>
+                                </tr>
+                                <tr>
+                                    <td>NV-123654</td>
+                                    <td>Hồ Văn Long</td>
+                                    <td>Nam</td>
+                                    <td class="text-align-center">11/08/1999</td>
+                                    <td>0967228399</td>
+                                    <td>vanlong@gmail.com</td>
+                                    <td>Giám đốc</td>
+                                    <td>Phòng nhân sự</td>
+                                    <td class="text-align-right">20.000.000</td>
+                                    <td>Đang thử việc</td>
+                                </tr>
+                                <tr>
+                                    <td>NV-123654</td>
+                                    <td>Hồ Văn Long</td>
+                                    <td>Nam</td>
+                                    <td class="text-align-center">11/08/1999</td>
+                                    <td>0967228399</td>
+                                    <td>vanlong@gmail.com</td>
+                                    <td>Giám đốc</td>
+                                    <td>Phòng nhân sự</td>
+                                    <td class="text-align-right">20.000.000</td>
+                                    <td>Đang thử việc</td>
+                                </tr>
+                                <tr>
+                                    <td>NV-123654</td>
+                                    <td>Hồ Văn Long</td>
+                                    <td>Nam</td>
+                                    <td class="text-align-center">11/08/1999</td>
+                                    <td>0967228399</td>
+                                    <td>vanlong@gmail.com</td>
+                                    <td>Giám đốc</td>
+                                    <td>Phòng nhân sự</td>
+                                    <td class="text-align-right">20.000.000</td>
+                                    <td>Đang thử việc</td>
+                                </tr>
+                                <tr>
+                                    <td>NV-123654</td>
+                                    <td>Hồ Văn Long</td>
+                                    <td>Nam</td>
+                                    <td class="text-align-center">11/08/1999</td>
+                                    <td>0967228399</td>
+                                    <td>vanlong@gmail.com</td>
+                                    <td>Giám đốc</td>
+                                    <td>Phòng nhân sự</td>
+                                    <td class="text-align-right">20.000.000</td>
+                                    <td>Đang thử việc</td>
+                                </tr>
+                                <tr>
+                                    <td>NV-123654</td>
+                                    <td>Hồ Văn Long</td>
+                                    <td>Nam</td>
+                                    <td class="text-align-center">11/08/1999</td>
+                                    <td>0967228399</td>
+                                    <td>vanlong@gmail.com</td>
+                                    <td>Giám đốc</td>
+                                    <td>Phòng nhân sự</td>
+                                    <td class="text-align-right">20.000.000</td>
+                                    <td>Đang thử việc</td>
+                                </tr>
+                                <tr>
+                                    <td>NV-123654</td>
+                                    <td>Hồ Văn Long</td>
+                                    <td>Nam</td>
+                                    <td class="text-align-center">11/08/1999</td>
+                                    <td>0967228399</td>
+                                    <td>vanlong@gmail.com</td>
+                                    <td>Giám đốc</td>
+                                    <td>Phòng nhân sự</td>
+                                    <td class="text-align-right">20.000.000</td>
+                                    <td>Đang thử việc</td>
+                                </tr>
+                                <tr>
+                                    <td>NV-123654</td>
+                                    <td>Hồ Văn Long</td>
+                                    <td>Nam</td>
+                                    <td class="text-align-center">11/08/1999</td>
+                                    <td>0967228399</td>
+                                    <td>vanlong@gmail.com</td>
+                                    <td>Giám đốc</td>
+                                    <td>Phòng nhân sự</td>
+                                    <td class="text-align-right">20.000.000</td>
+                                    <td>Đang thử việc</td>
+                                </tr>
+                                <tr>
+                                    <td>NV-123654</td>
+                                    <td>Hồ Văn Long</td>
+                                    <td>Nam</td>
+                                    <td class="text-align-center">11/08/1999</td>
+                                    <td>0967228399</td>
+                                    <td>vanlong@gmail.com</td>
+                                    <td>Giám đốc</td>
+                                    <td>Phòng nhân sự</td>
+                                    <td class="text-align-right">20.000.000</td>
+                                    <td>Đang thử việc</td>
+                                </tr>
+                                <tr>
+                                    <td>NV-123654</td>
+                                    <td>Hồ Văn Long</td>
+                                    <td>Nam</td>
+                                    <td class="text-align-center">11/08/1999</td>
+                                    <td>0967228399</td>
+                                    <td>vanlong@gmail.com</td>
+                                    <td>Giám đốc</td>
+                                    <td>Phòng nhân sự</td>
+                                    <td class="text-align-right">20.000.000</td>
+                                    <td>Đang thử việc</td>
+                                </tr>
+                                <tr>
+                                    <td>NV-123654</td>
+                                    <td>Hồ Văn Long</td>
+                                    <td>Nam</td>
+                                    <td class="text-align-center">11/08/1999</td>
+                                    <td>0967228399</td>
+                                    <td>vanlong@gmail.com</td>
+                                    <td>Giám đốc</td>
+                                    <td>Phòng nhân sự</td>
+                                    <td class="text-align-right">20.000.000</td>
+                                    <td>Đang thử việc</td>
+                                </tr>
+                                <tr>
+                                    <td>NV-123654</td>
+                                    <td>Hồ Văn Long</td>
+                                    <td>Nam</td>
+                                    <td class="text-align-center">11/08/1999</td>
+                                    <td>0967228399</td>
+                                    <td>vanlong@gmail.com</td>
+                                    <td>Giám đốc</td>
+                                    <td>Phòng nhân sự</td>
+                                    <td class="text-align-right">20.000.000</td>
+                                    <td>Đang thử việc</td>
+                                </tr>
+                                <tr>
+                                    <td>NV-123654</td>
+                                    <td>Hồ Văn Long</td>
+                                    <td>Nam</td>
+                                    <td class="text-align-center">11/08/1999</td>
+                                    <td>0967228399</td>
+                                    <td>vanlong@gmail.com</td>
+                                    <td>Giám đốc</td>
+                                    <td>Phòng nhân sự</td>
+                                    <td class="text-align-right">20.000.000</td>
+                                    <td>Đang thử việc</td>
+                                </tr>
+                                <tr>
+                                    <td>NV-123654</td>
+                                    <td>Hồ Văn Long</td>
+                                    <td>Nam</td>
+                                    <td class="text-align-center">11/08/1999</td>
+                                    <td>0967228399</td>
+                                    <td>vanlong@gmail.com</td>
+                                    <td>Giám đốc</td>
+                                    <td>Phòng nhân sự</td>
+                                    <td class="text-align-right">20.000.000</td>
+                                    <td>Đang thử việc</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="pagingbar">
+                <div class="pagingbar-leftinfo">Hiển thị 1-10/1000 nhân viên</div>
+                <div class="pagingbar-pagination">
+                    <a href="#" class="pagination  pagination-icon  pagination-firstpage"></a>
+                    <a href="#" class="pagination  pagination-icon  pagination-prevpage"></a>
+                    <a href="#" class="pagination  pagination-number paging-selected">1</a>
+                    <a href="#" class="pagination  pagination-number ">2</a>
+                    <a href="#" class="pagination  pagination-number ">3</a>
+                    <a href="#" class="pagination  pagination-number ">4</a>
+                    <a href="#" class="pagination  pagination-icon  pagination-nextpage"></a>
+                    <a href="#" class="pagination  pagination-icon  pagination-lastpage"></a>
+                </div>
+                <div class="pagingbar-rightinfo">10 nhân viên/trang</div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="/js/lib/jque"></script>
+
+    <link rel="stylesheet" href="../content/font/fontawesome-5.15.1/css/all.min.css">
+    <script src="/js/lib/jquery-3.6.0.min.js"></script>
+    <script src="/js/lib/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <script src="../js/page/employee.js"></script>
+</body>
+
+
+</html>

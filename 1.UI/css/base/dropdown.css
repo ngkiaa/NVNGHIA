@@ -1,0 +1,14 @@
+.dropdown {
+    border-radius: 4px;
+    background-color: #BBBBBB;
+    border: 1px;
+    height: 40px;
+    color: #000000;
+    font-family: MISAGoogleSans-Regular;
+    font-size: 13px;
+    align-items: center;
+}
+
+.dropdown .department-info {
+    border: none;
+}

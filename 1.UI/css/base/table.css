@@ -1,0 +1,40 @@
+.table {
+    max-width: 100%;
+    background-color: transparent;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-family: 'MISAGoogleSans-Regular';
+    margin-right: 16px;
+}
+
+.table {
+    width: calc(100% - 16px);
+    margin-bottom: 20px;
+}
+
+.table th,
+.table td {
+    padding-left: 16px;
+    padding-right: 10px;
+    line-height: 48px;
+    vertical-align: top;
+    border-bottom: 1px solid #bbbbbb;
+    white-space: nowrap;
+}
+
+.table-zebra tbody>tr:nth-child(odd)>td,
+.table-zebra tbody>tr:nth-child(odd)>th {
+    background-color: #f4f4f4;
+}
+
+.text-align-left {
+    text-align: left;
+}
+
+.text-align-right {
+    text-align: right;
+}
+
+.text-align-center {
+    text-align: center;
+}

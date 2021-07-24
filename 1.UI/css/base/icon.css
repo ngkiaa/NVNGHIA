@@ -1,0 +1,20 @@
+.icon-option-default-16 {
+    width: 16px;
+    height: 16px;
+    background-image: url('/content/icon/option.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.icon-add {
+    background-image: url('/content/icon/add.png');
+    width: 16px;
+    height: 16px;
+}
+
+.icon-search {
+    background-image: url(/content/icon/search.png);
+    background-repeat: no-repeat;
+    background-position: 16px center;
+    padding-right: 8px;
+}

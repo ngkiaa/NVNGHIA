@@ -1,0 +1,53 @@
+.content {
+    position: absolute;
+    top: 49px;
+    left: 226px;
+    width: calc(100% - 242px);
+    height: calc(100vh - 110px);
+    padding: 16px;
+}
+
+.content>.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.content .container-body {}
+
+.container-body .container {
+    overflow-x: scroll;
+    overflow-y: scroll;
+}
+
+
+/* Page title */
+
+.content .content-header {
+    padding: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.content .content-header .title {
+    font-size: 25px;
+    font-weight: bold;
+    font-family: MISAGoogleSans-Regular;
+}
+
+.content .content-header .feature {
+    right: 16px;
+    position: absolute;
+    margin-right: 16px;
+}
+
+
+/* filter bar */
+
+.content .filter-bar {}
+
+.content .filter-bar .filter-left {
+    display: flex;
+}
+
+
+/* paging */

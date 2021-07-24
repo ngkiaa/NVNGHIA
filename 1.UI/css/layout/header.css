@@ -1,0 +1,95 @@
+.header {
+    height: 48px;
+    width: 100%;
+    display: flex;
+}
+
+.header .header-left {
+    display: flex;
+    width: 226px;
+    border-right: 1px solid #ccc;
+    height: 48px;
+    align-items: center;
+}
+
+.header .header-left .toggle {
+    width: 24px;
+    height: 24px;
+    margin: 12px 10px 12px 16px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    background-image: url(../../content/img/toggle.png);
+}
+
+.header .header-left .logo {
+    height: 24px;
+    width: 100%;
+    background-image: url(../../content/cukcuk-logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 12px 0px;
+    background-size: contain;
+    cursor: pointer;
+}
+
+.header .header-right {
+    border-bottom: 1px solid#ccc;
+    height: 48px;
+    width: calc(100% - 226px);
+    display: flex;
+    align-items: center;
+}
+
+.header .header-right .restaurant {
+    margin-left: 16px;
+    display: flex;
+    margin-right: auto;
+    align-items: center;
+    font-family: MISAGoogleSans-Regular;
+    width: 50%;
+    height: 48px;
+    position: absolute;
+}
+
+.header .header-right .restaurant .name {
+    width: auto;
+    font-size: 15px;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.header .header-right .restaurant .arrow {
+    height: 16px;
+    width: 16px;
+    cursor: pointer;
+}
+
+.header .header-right .account {
+    display: flex;
+    margin-left: auto;
+    margin-right: 16px;
+    align-items: center;
+    font-family: MISAGoogleSans-Regular;
+}
+
+.header .header-right .account .avatar {
+    margin-right: 16px;
+    height: 20px;
+    width: 20px;
+    background-image: url(/content/icon/avatar-default.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.header .header-right .account .icon {
+    margin-right: 16px;
+    cursor: pointer;
+}
+
+.header .header-right .account .dots {
+    margin-left: 16px;
+    cursor: pointer;
+}
